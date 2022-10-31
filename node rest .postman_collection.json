@@ -1,0 +1,576 @@
+{
+	"info": {
+		"_postman_id": "6e1a7c83-ea1c-490d-8cc3-23912a5a5bc7",
+		"name": "node rest ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19234480"
+	},
+	"item": [
+		{
+			"name": "list products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45c-ajLSpoIrj5AcAbHxA+skWL0Kq7I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 23:52:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"635e6673161a75c49a204b83\",\n        \"id\": 1,\n        \"name\": \"Number 00100\",\n        \"price\": 20,\n        \"quantity\": 200,\n        \"category_id\": 1,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b84\",\n        \"id\": 2,\n        \"name\": \"jkl\",\n        \"price\": 20,\n        \"quantity\": 1,\n        \"category_id\": 1,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b85\",\n        \"id\": 3,\n        \"name\": \"xyz\",\n        \"price\": 5,\n        \"quantity\": 10,\n        \"category_id\": 2,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b86\",\n        \"id\": 4,\n        \"name\": \"xyz\",\n        \"price\": 5,\n        \"quantity\": 20,\n        \"category_id\": 2,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b87\",\n        \"id\": 5,\n        \"name\": \"abc\",\n        \"price\": 10,\n        \"quantity\": 10,\n        \"category_id\": 3,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b88\",\n        \"id\": 6,\n        \"name\": \"def\",\n        \"price\": 7.5,\n        \"quantity\": 5,\n        \"category_id\": 3,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b89\",\n        \"id\": 7,\n        \"name\": \"def\",\n        \"price\": 7.5,\n        \"quantity\": 10,\n        \"category_id\": 3,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b8a\",\n        \"id\": 8,\n        \"name\": \"abc\",\n        \"price\": 10,\n        \"quantity\": 5,\n        \"category_id\": 4,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635ef80b8c69765454d04ea5\",\n        \"name\": \"Number 1\",\n        \"price\": 20,\n        \"quantity\": 200,\n        \"category_id\": 1,\n        \"code\": 123,\n        \"image\": \"abc.png\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Number o1\",\r\n    \"price\": 20,\r\n    \"quantity\": 200,\r\n    \"category_id\":1,\r\n    \"code\": 123,\r\n    \"image\":\"abc.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Number o1\",\r\n    \"price\": 20,\r\n    \"quantity\": 200,\r\n    \"category_id\":1,\r\n    \"code\": 123,\r\n    \"image\":\"abc.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7c-45tCeRJM+HpglV3Fptg9Sud51Gw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 23:53:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Number o1\",\n    \"price\": 20,\n    \"quantity\": 200,\n    \"category_id\": 1,\n    \"code\": 123,\n    \"image\": \"abc.png\",\n    \"_id\": \"635f0e62abe0322357d05393\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/category/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "227"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e3-dn1izvO54cCctJpitCgsJFqHi/I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 23:53:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"635e6673161a75c49a204b7f\",\n        \"id\": 1,\n        \"name\": \"toys\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b80\",\n        \"id\": 2,\n        \"name\": \"pets\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b81\",\n        \"id\": 3,\n        \"name\": \"home\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b82\",\n        \"id\": 4,\n        \"name\": \"movies\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "product by category_id 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/?category_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "category_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "product by category_id 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/?category_id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								""
+							],
+							"query": [
+								{
+									"key": "category_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "243"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f3-SBiXC+6dJQnxtg0rNUBcHp4yxqI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 23:28:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"635e6673161a75c49a204b85\",\n        \"id\": 3,\n        \"name\": \"xyz\",\n        \"price\": 5,\n        \"quantity\": 10,\n        \"category_id\": 2,\n        \"image\": \"images/cube.jpg\"\n    },\n    {\n        \"_id\": \"635e6673161a75c49a204b86\",\n        \"id\": 4,\n        \"name\": \"xyz\",\n        \"price\": 5,\n        \"quantity\": 20,\n        \"category_id\": 2,\n        \"image\": \"images/cube.jpg\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "update product ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Number 00100\",\r\n    \"price\": 20,\r\n    \"quantity\": 200,\r\n    \"category_id\":1,\r\n    \"code\": 123,\r\n    \"image\":\"abc.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update product 1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Number 00100\",\r\n    \"price\": 20,\r\n    \"quantity\": 200,\r\n    \"category_id\":1,\r\n    \"code\": 123,\r\n    \"image\":\"abc.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "131"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"83-HaOd7RcgpTCuzOT7n/vxxPht6mU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 23:49:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"635e6673161a75c49a204b83\",\n    \"id\": 1,\n    \"name\": \"Number 00100\",\n    \"price\": 20,\n    \"quantity\": 200,\n    \"category_id\": 1,\n    \"image\": \"images/cube.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "product by id1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "product by id1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "131"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"83-HaOd7RcgpTCuzOT7n/vxxPht6mU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Oct 2022 23:56:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"635e6673161a75c49a204b83\",\n    \"id\": 1,\n    \"name\": \"Number 00100\",\n    \"price\": 20,\n    \"quantity\": 200,\n    \"category_id\": 1,\n    \"image\": \"images/cube.jpg\"\n}"
+				}
+			]
+		}
+	]
+}
