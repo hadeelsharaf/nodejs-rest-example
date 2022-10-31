@@ -7,7 +7,7 @@ const PORT = 3000;
 
 
 const app = express();
-const DBURI = "mongodb+srv://nodejsapp:NWjr7aaG7baEod9A@cluster0.mhvwws3.mongodb.net/?retryWrites=true&w=majority";
+const DBURI = "Removed from GIT";
 mongoose.connect(DBURI);
 
 app.use(cors());
